@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Content</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Start of 6x6 table with a row of headers and the first column italicized. Not inclusive in the 6x6 table is a
+    table footer -->
+    <table>
+            <caption>R/T airfare prices from Bologna, Italy to Kansas City, MO USA departing 04/20
+            returning 05/04 +/- 2 day</caption>
+            <thead>
+                <tr class="head">
+                    <th></th>
+                    <th>04/18</th>
+                    <th>04/19</th>
+                    <th>04/20</th>
+                    <th>04/21</th>
+                    <th>04/22</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="body">
+                    <td><i>05/02</i></td>
+                    <td>$1201</td>
+                    <td>$1201</td>
+                    <td>$1201</td>
+                    <td>$1035</td>
+                    <td>$1100</td>
+                </tr>
+                <tr class="body">
+                    <td><i>05/03</i></td>
+                    <td>$955</td>
+                    <td>$1100</td>
+                    <td>$1201</td>
+                    <td>$955</td>
+                    <td>$1100</td>
+                </tr>
+                <tr class="body">
+                    <td><i>05/04</i></td>
+                    <td>$1221</td>
+                    <td>$955</td>
+                    <td>$845</td>
+                    <td>$1201</td>
+                    <td>$1001</td>
+                </tr>
+                <tr class="body">
+                    <td><i>05/05</i></td>
+                    <td>$1201</td>
+                    <td>$955</td>
+                    <td>$845</td>
+                    <td>$1201</td>
+                    <td>$1001</td>
+                </tr>
+                <tr class="body">
+                    <td><i>05/06</i></td>
+                    <td>$1221</td>
+                    <td>$1100</td>
+                    <td>$1201</td>
+                    <td>$1035</td>
+                    <td>$1221</td>
+                </tr>
+            </tbody>
+            <tfoot class="foot">
+                <tr>
+                    <td colspan="2">Best airfare</td>
+                    <td colspan="4">04/20-05/04 at $845</td>
+                </tr>
+            </tfoot>
+    </table>
+    <!--End of table-->
+    <br />
+    <!--Start of Ordered list with a nested unordered list-->
+    <h3>Top 3 r/t tickets based on airfare</h3>
+        <ol>
+            <li>04/20-05/04 at $845</li>
+            <li>04/19-05/04 at $950</li>
+            <li>Multiple dates:
+                <ul>
+                    <li>04/18-05/03 at $955</li>
+                    <li>04/19-05/04 at $955</li>
+                    <li>04/20-05/05 at $955</li>
+                    <li>04/21-05/03 at $955</li>
+                </ul>
+            </li>
+        </ol>
+    <!--end of list-->
+    <div class="space"></div>
+    <div class="outer-content"><div id="inner-content">Book Flight via get</div></div>
+    <!--start of form submitted via get-->
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php"
+          method="get">
+        <fieldset>
+            <legend>Contact details</legend>
+            <label>Name:
+            <input type="text" name="text_input" /></label>
+            <label>Birthday:
+            <input type="date" name="birth-date" /></label>
+            <label>Cellphone number:
+                <input type="number" name="numerical_input" /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Become a member</legend>
+            <label>Email:<br />
+            <input type="email" name="email" /><br /></label>
+            <label>Password:<br />
+            <input type="password" name="password_input"><br /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Choose Flight</legend>
+            <label>Departure date: <input type="date" name="departure-date"></label>
+            <label>Return date: <input type="date" name="return-date"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Welcome gift</legend>
+            <p>Choose a welcome gift</p>
+            <input id="snickers-get" type="radio" name="candy" value="snickers" />
+            <label for="snickers-get">Snickers</label><br />
+            <input id="skittles-get" type="radio" name="candy" value="skittles" />
+            <label for="skittles-get">Skittles</label><br />
+            <input id="mentos-get" type="radio" name="candy" value="mentos" />
+            <label for="mentos-get">Mentos</label><br />
+            <br /><input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <!-- end of get form-->
+    <div class="space"></div>
+    <div class="outer-content"><div id="inner-content_2">Book Flight via post</div> </div>
+    <!-- start of form submitted via post-->
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php"
+          method="post">
+        <fieldset>
+            <legend>Contact details</legend>
+            <label>Name:
+                <input type="text" name="name" /></label>
+            <label>Birthday:
+                <input type="date" name="birth-date" /></label>
+            <label>Cellphone number:
+                <input type="number" name="phone_number" /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Become a member</legend>
+            <label>Email:<br />
+                <input type="email" name="email" /><br /></label>
+            <label>Password:<br />
+                <input type="password" name="password"><br /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Choose Flight</legend>
+            <label>Departure date: <input type="date" name="departure-date"></label>
+            <label>Return date: <input type="date" name="return-date"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Welcome gift</legend>
+            <p>Choose a welcome gift</p>
+            <input id="snickers-post" type="radio" name="candy" value="snickers" />
+            <label for="snickers-post">Snickers</label><br />
+            <input id="skittles-post" type="radio" name="candy" value="skittles" />
+            <label for="skittles-post">Skittles</label><br />
+            <input id="mentos-post" type="radio" name="candy" value="mentos" />
+            <label for="mentos-post">Mentos</label><br />
+            <br /><input type="submit" value="Submit">
+        </fieldset>
+    </form>
+    <!--end of post form-->
+</body>
+</html>
